@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Achadinhos e ofertas selecionadas em um só lugar.">
+  <title>Tudo em Um Clique | Achadinhos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./" aria-label="Tudo em Um Clique - início">
+      <span class="brand-mark">1</span>
+      <span>TUDO EM <b>UM CLIQUE</b></span>
+    </a>
+    <a class="admin-link" href="/admin/">Área administrativa</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">ACHADINHOS • OFERTAS • NOVIDADES</p>
+      <h1>Seus melhores achadinhos<br><span>estão aqui.</span></h1>
+      <p class="hero-copy">Produtos selecionados para facilitar sua busca. Gostou? Clique para conferir na loja.</p>
+      <a class="hero-button" href="#produtos">VER PRODUTOS <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="section-heading">
+        <div><p class="eyebrow">ESCOLHIDOS A DEDO</p><h2>Achadinhos em destaque</h2></div>
+        <span id="product-count" class="count"></span>
+      </div>
+      <div id="products" class="products-grid" aria-live="polite">
+        <p class="status">Carregando produtos...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><b>TUDO EM UM CLIQUE</b></p>
+    <p>Alguns links podem ser links de afiliado. Isso não altera o preço para você.</p>
+  </footer>
+  <script src="app.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      });
+    }
+  </script>
+</body>
+</html>

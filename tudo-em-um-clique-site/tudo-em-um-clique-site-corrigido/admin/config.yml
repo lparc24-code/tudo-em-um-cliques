@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "pt"
+
+collections:
+  - name: "catalogo"
+    label: "Produtos"
+    files:
+      - name: "produtos"
+        label: "Lista de produtos"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Produtos"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: "Nome do produto", name: "name", widget: "string" }
+              - { label: "Preço atual", name: "price", widget: "string", required: false }
+              - { label: "Preço antigo", name: "old_price", widget: "string", required: false }
+              - { label: "Descrição curta", name: "description", widget: "text", required: false }
+              - { label: "Imagem", name: "image", widget: "image", required: false }
+              - { label: "Link de afiliado", name: "affiliate_url", widget: "string", hint: "Cole aqui o link gerado no painel de afiliados da SHEIN." }
