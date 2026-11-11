@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Seus melhores achadinhos estão aqui! Ofertas, novidades e produtos selecionados.">
+  <title>Tudo em Um Clique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand-mark">🛍️</div>
+    <p class="eyebrow">ACHADOS • OFERTAS • NOVIDADES</p>
+    <h1>Tudo em Um Clique</h1>
+    <p class="tagline">Seus melhores achadinhos estão aqui!</p>
+    <a class="admin-link" href="/admin/">Área do administrador</a>
+  </header>
+  <main class="wrap">
+    <div class="section-heading">
+      <div><p class="eyebrow">VITRINE</p><h2>Encontre seu próximo achado</h2></div>
+      <span id="count" class="count">Carregando...</span>
+    </div>
+    <div id="filters" class="filters"></div>
+    <section id="products" class="products" aria-live="polite">
+      <p class="empty">Carregando produtos...</p>
+    </section>
+    <p id="empty" class="empty" hidden>Nenhum produto nesta categoria ainda. Volte em breve!</p>
+    <p class="disclosure">Os links podem ser links de afiliado. Se você comprar por eles, podemos receber uma comissão, sem custo adicional para você.</p>
+  </main>
+  <footer>© <span id="year"></span> Tudo em Um Clique</footer>
+  <script src="app.js"></script>
+</body>
+</html>

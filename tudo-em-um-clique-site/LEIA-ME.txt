@@ -1,0 +1,41 @@
+TUDO EM UM CLIQUE — SITE + PAINEL DE PRODUTOS
+================================================
+
+O QUE VEM NESTA PASTA
+- index.html / style.css / app.js: vitrine pública.
+- /admin: painel Decap CMS para cadastrar e editar produtos.
+- /data/products.json: produtos de exemplo.
+- /images: pasta para imagens.
+
+IMPORTANTE
+Este pacote é a base do site, ainda NÃO está publicado e o painel ainda
+precisa ser conectado a uma conta GitHub e ao Netlify. O endereço final
+só existe depois da publicação. Não compartilhe senhas ou tokens comigo.
+
+COMO PUBLICAR (precisa de computador ou navegador em modo desktop)
+1. Crie uma conta no GitHub e um repositório novo chamado
+   tudo-em-um-clique. Envie todos os arquivos desta pasta para a raiz
+   do repositório e use a branch "main".
+2. Crie uma conta no Netlify e escolha "Add new site" > "Import an existing
+   project". Conecte o GitHub e selecione o repositório.
+3. Em Build settings, deixe Build command vazio e Publish directory como ".".
+   Publique o site.
+4. No Netlify, abra Site configuration > Identity e habilite Identity.
+   Em Registration preferences, escolha "Invite only".
+5. Em Identity > Services, habilite Git Gateway.
+6. Convide seu próprio e-mail em Identity > Invite users e aceite o convite.
+7. Em admin/config.yml, troque SEU-SITE pelo nome real do endereço Netlify
+   (por exemplo, minha-loja.netlify.app). Salve e envie a alteração ao GitHub.
+8. Abra https://SEU-SITE.netlify.app/admin/ e entre com o e-mail convidado.
+   O painel permite adicionar, editar e remover produtos, fotos, preços
+   e links. Ao publicar, a vitrine pública atualiza após o deploy.
+
+SEGURANÇA E AFILIADOS
+- Mantenha o acesso do Netlify Identity como "Invite only".
+- Use somente links de afiliado gerados pelo Centro de Afiliados SHEIN.
+- Confira as regras do programa sobre divulgação e atribuição de comissão.
+- Os produtos de exemplo são fictícios; substitua antes de divulgar.
+- Não coloque senha, chave privada ou token dentro dos arquivos do site.
+
+Se quiser, posso orientar cada etapa enquanto você publica. Não preciso
+que você envie sua senha: faça login diretamente no GitHub e no Netlify.

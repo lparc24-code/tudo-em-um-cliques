@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "Exemplo: Bolsa feminina",
+      "category": "Moda",
+      "price": "39,90",
+      "description": "Troque este exemplo por um produto real.",
+      "image": "",
+      "link": "https://www.shein.com/"
+    },
+    {
+      "name": "Exemplo: Acessório",
+      "category": "Acessórios",
+      "price": "19,90",
+      "description": "Adicione seu link de afiliado no painel.",
+      "image": "",
+      "link": "https://www.shein.com/"
+    }
+  ]
+}

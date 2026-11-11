@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: "pt"
+
+site_url: "https://SEU-SITE.netlify.app"
+display_url: "https://SEU-SITE.netlify.app"
+
+collections:
+  - name: "vitrine"
+    label: "Vitrine de produtos"
+    files:
+      - name: "produtos"
+        label: "Produtos"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Produtos"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "Nome do produto", name: "name", widget: "string" }
+              - { label: "Categoria", name: "category", widget: "string", required: false }
+              - { label: "Preço (R$)", name: "price", widget: "string", required: false }
+              - { label: "Descrição", name: "description", widget: "text", required: false }
+              - { label: "Foto do produto", name: "image", widget: "image", required: false }
+              - { label: "Link de afiliado", name: "link", widget: "string" }
